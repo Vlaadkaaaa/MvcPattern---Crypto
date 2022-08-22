@@ -13,6 +13,8 @@
 		5565152A28B3B629007D1FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5565152828B3B629007D1FAF /* Main.storyboard */; };
 		5565152C28B3B62E007D1FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5565152B28B3B62E007D1FAF /* Assets.xcassets */; };
 		5565152F28B3B62E007D1FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5565152D28B3B62E007D1FAF /* LaunchScreen.storyboard */; };
+		5565153C28B3B730007D1FAF /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565153B28B3B730007D1FAF /* Crypto.swift */; };
+		5565153E28B3BFAF007D1FAF /* RandomCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565153D28B3BFAE007D1FAF /* RandomCount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5565152B28B3B62E007D1FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5565152E28B3B62E007D1FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5565153028B3B62E007D1FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5565153B28B3B730007D1FAF /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		5565153D28B3BFAE007D1FAF /* RandomCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		5565152128B3B629007D1FAF /* MvcPattern - Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				5565153928B3B687007D1FAF /* Controllers */,
+				5565153828B3B67E007D1FAF /* Views */,
+				5565153728B3B676007D1FAF /* Models */,
 				5565152228B3B629007D1FAF /* AppDelegate.swift */,
 				5565152428B3B629007D1FAF /* SceneDelegate.swift */,
-				5565152628B3B629007D1FAF /* ViewController.swift */,
-				5565152828B3B629007D1FAF /* Main.storyboard */,
 				5565152B28B3B62E007D1FAF /* Assets.xcassets */,
-				5565152D28B3B62E007D1FAF /* LaunchScreen.storyboard */,
 				5565153028B3B62E007D1FAF /* Info.plist */,
 			);
 			path = "MvcPattern - Crypto";
+			sourceTree = "<group>";
+		};
+		5565153728B3B676007D1FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5565153B28B3B730007D1FAF /* Crypto.swift */,
+				5565153D28B3BFAE007D1FAF /* RandomCount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5565153828B3B67E007D1FAF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5565153A28B3B6AE007D1FAF /* Storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5565153928B3B687007D1FAF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5565152628B3B629007D1FAF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5565153A28B3B6AE007D1FAF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5565152828B3B629007D1FAF /* Main.storyboard */,
+				5565152D28B3B62E007D1FAF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5565153C28B3B730007D1FAF /* Crypto.swift in Sources */,
 				5565152728B3B629007D1FAF /* ViewController.swift in Sources */,
 				5565152328B3B629007D1FAF /* AppDelegate.swift in Sources */,
+				5565153E28B3BFAF007D1FAF /* RandomCount.swift in Sources */,
 				5565152528B3B629007D1FAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
